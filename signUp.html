@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/signUp.css">
+</head>
+
+
+<body>
+    <form action="">
+
+        <div class="container">
+
+            <div class="introduction">
+                <div class="icon">
+                    <i class="fa-brands fa-spotify"></i>
+                    <p>Spotify</p>
+                </div>
+                <div class="infomation">
+                    <p class="information-container">Đăng kí miễn phí để bắt đầu nghe.</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="content-container">
+                <label for="content-email " class="text-header">Email của bạn là gì?</label><br>
+                <input type="email" id="content-email" placeholder="Nhập email của bạn">
+            </div>
+            <div class="content-container password">
+                <label for="content-password" class="text-header">Tạo mật khẩu</label><br>
+                <input type="password" id="content-password" placeholder="Tạo mật khẩu">
+            </div>
+            <div class="content-container name">
+                <label for="content-name" class="text-header">Bạn tên là gì?</label><br>
+                <input type="text" id="content-name" placeholder="Nhập tên hồ sơ" class="content-name">
+            </div>
+            <div class="content-container name">
+                <label for="date" class="text-header">Ngày sinh</label><br>
+                <input type="date" placeholder="Nhập ngày sinh" id="date" class="content-name" >
+            </div>
+            <div>
+                <p class="text-header">Giới tính của bạn là gì?</p>
+                <div class="gender">
+                    <div class="male">
+                        <input type="radio" name="gender" id="male">
+                        <label for="">Nam</label>
+                    </div>
+
+                    <div class="female">
+                        <input type="radio" name="gender" id="female">
+                        <label for="">Nữ</label>
+                    </div>
+
+                </div>
+
+                <div class="button">
+                    <button class="sign-up" id="button">Đăng kí</button>
+                </div>
+
+                <div class="signup-container">
+                    <p>Bạn có tài khoản? <a href="">Đăng nhập</a></p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </form>
+    <script src="./js/signUp.js"></script>
+</body>
+
+
+
+
+</html>

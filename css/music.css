@@ -1,0 +1,609 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+.flex{
+    display: flex;
+}
+
+#main-content {
+    display: flex;
+
+
+}
+
+.home {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    margin: 10px 10px;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.icon-home {
+    margin-left: 30px;
+    padding: 8px 0;
+
+}
+
+.search {
+    background-color: rgb(27, 26, 26);
+    height: 100%;
+}
+
+.content-container {
+    width: 24%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+
+
+.main-container {
+    width: 79%;
+
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 25%;
+
+}
+
+.search-content {
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+
+}
+
+.search-library {
+    width: 70%;
+    margin-left: 20px;
+    size: 40px;
+}
+
+.search-list {
+    margin-top: 16px;
+    display: flex;
+    font-size: 20px;
+}
+
+.search-container {
+    display: flex;
+    size: 40px;
+    margin-left: 150px;
+
+}
+
+.search {
+    margin: 10px 10px;
+    border-radius: 6px;
+}
+
+.search-icon {
+    margin-right: 16px;
+
+}
+
+.list {
+    display: flex;
+    color: aliceblue;
+}
+
+.list-container {
+    margin-top: 16px;
+    background-color: grey;
+    border-radius: 25px;
+    margin-left: 16px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.find {
+    color: white;
+    display: flex;
+    margin-top: 24px;
+}
+
+.find-content {
+    width: 70%;
+    margin-left: 30px;
+}
+
+.find-container {
+    margin-right: 32px;
+    display: flex;
+}
+
+.details {
+    color: rgb(104, 104, 104);
+}
+
+#heart-img {
+    width: 55px;
+    border-radius: 5px;
+    margin-left: 16px;
+}
+
+.music-search {
+    display: flex;
+
+}
+
+.name {
+    color: rgb(126, 234, 126);
+}
+
+.music-content {
+    margin-left: 16px;
+    display: flex;
+}
+
+.loa {
+    color: rgb(126, 234, 126);
+    margin: auto;
+    padding-left: 50px;
+}
+
+.fa-thumbtack {
+    color: rgb(126, 234, 126);
+
+}
+
+.artist-img {
+    width: 55px;
+    border-radius: 25px;
+    margin-left: 16px;
+
+}
+
+.artist {
+    margin-top: 20px;
+    display: flex;
+}
+
+.info {
+    size: 30px;
+
+    margin-left: 32px;
+}
+
+.name-artist {
+    color: aliceblue;
+}
+
+.job {
+    color: rgb(93, 89, 89);
+}
+
+.recent {
+    display: flex;
+
+}
+
+.find-icon {
+    margin: auto;
+    padding-left: 4px;
+}
+
+.fa-circle {
+    font-size: 6px;
+}
+
+.details {
+    display: flex;
+}
+
+#details-icon {
+    padding-bottom: 6px;
+    margin-left: 8px;
+
+}
+
+#hi {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+
+.music-container {
+    display: flex;
+    width: 31%;
+    height: 80px;
+    background-color: rgb(66, 64, 64);
+    margin-left: 30px;
+    display: flex;
+
+}
+
+.mMx2LUixlnN_Fu45JpFB {
+    width: 80px;
+
+
+}
+
+.container-info {
+    color: aliceblue;
+    margin: auto;
+}
+
+.head-arrow {
+    margin-left: 50px;
+    display: flex;
+    margin-top: 5px;
+}
+
+.arrow-right {
+    background-color: rgb(41, 40, 40);
+    color: aliceblue;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.arrow-left {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+/* #premium{
+    width: 180px;
+    background-color: rgb(255, 255, 255);
+    height: 35px;
+    border-radius: 25px;
+} */
+#download {
+    width: 180px;
+    background-color: rgb(0, 0, 0);
+    height: 35px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+}
+
+.account {
+    margin-right: 30px;
+
+}
+
+.fa-arrow-down {
+    color: white;
+
+
+}
+
+.download-container {
+    display: flex;
+}
+
+.download-icon {
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+.list-music {
+    margin-top: 64px;
+}
+
+#head {
+    margin-top: 90px;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 50px;
+
+}
+
+.fa-arrow-up-right-from-square {
+    margin-left: 20px;
+    color: white;
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.dis-account {
+    border-top: 0.1px solid white;
+}
+
+.dropdown-menu {}
+
+footer {
+    margin-top: 528px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+}
+
+.play-music {
+    width: 25%;
+}
+
+.listener-bar {
+    width: 50%;
+}
+
+.option {
+    width: 25%;
+}
+
+.music-img {
+    width: 70px;
+    margin-top: 16px;
+    margin-bottom: 22px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.music-list {
+    margin-bottom: 120px;
+}
+
+.play-music {
+    display: flex;
+    color: white;
+
+}
+
+.music-infor {
+    margin-top: 25px;
+    margin-left: 18px;
+}
+
+.music-name {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.music-artist {
+    margin-top: 12px;
+    font-size: 10px;
+}
+
+.fa-heart {
+    color: white;
+
+}
+
+.fa-house {
+    color: gray;
+    margin-bottom: 28px;
+}
+
+.fa-magnifying-glass {
+    color: white;
+}
+
+#search-music {
+    border: 3px solid white;
+    background-color: rgb(73, 72, 72);
+    color: white;
+    margin-left: 40px;
+    width: 350px;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 40px;
+}
+
+#avartar {
+    border-radius: 25px;
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+.search-icon {
+    color: white;
+    background-color: rgb(73, 72, 72);
+    border: none;
+
+}
+
+.head {
+    position: fixed;
+    background-color: rgb(25, 24, 24);
+    top: 0;
+    left: 24%;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 12px;
+    height: 100%;
+
+}
+
+.header-container {
+    display: flex;
+    position: fixed;
+    margin-top: 170px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+
+
+}
+
+.answer {
+    color: white;
+    font-weight: bold;
+}
+
+.first-answer {
+    margin-right: 20px;
+}
+
+.answer-list {}
+
+.answer-container {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgb(41, 40, 40);
+    border: none;
+    width: 420px;
+    height: 220px;
+
+}
+
+.name-answer {
+    color: white;
+    margin-top: 12px;
+    margin-left: 8px;
+    /* position: fixed;
+    left: 26%;
+    top: 26%; */
+}
+
+.answer-img {
+    width: 80px;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 12px;
+    /* position: fixed;
+    left: 26%;
+    top: 30%; */
+}
+
+.info-answer {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 40px;
+
+}
+
+.artist-answer {
+    margin-right: 10px;
+    color: gray;
+}
+
+.name-artist:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.song-answer {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    width: 65px;
+    padding-left: 8px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 200px;
+    top: 29px;
+    font-size: 20px;
+    background: none
+}
+
+.resuilt {
+    display: flex;
+    /* position: fixed; */
+    margin-top: 14px;
+    /* width: 650px;
+    height: 65px; */
+    /* background-color:rgb(25, 24, 24); */
+    /* border: none; */
+    background-color: rgb(38, 38, 39);
+    /* border-radius: 5px; */
+    justify-content: space-between;
+
+
+
+}
+
+.result-img {
+    margin-top: 3px;
+    width: 45px;
+    /* position: fixed; */
+    /* left: 55%; */
+    border-radius: 5px;
+    /* top: 28%; */
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-right: 16px;
+
+
+}
+
+.result-info {
+    color: white;
+    margin-top: 8px;
+    /* display: flex; */
+
+
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-info {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 16px;
+    color: white;
+    margin-top: 18px;
+    margin-left: 290px;
+
+}
+
+.time {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.id:hover {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/signIn.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="" class="logo">
+    </header>
+    <form action="">
+        <div class="center">
+            <div class="background-color">
+                <div class="container">
+                    <div class="header">
+                        <p class="header-container">Đăng nhập vào Spotify</p>
+
+                    </div>
+                    <div class="content-container">
+                        <label for="content-email " class="text-header">Email hoặc tên người dùng</label><br>
+                        <input type="text" id="content-email" placeholder="Email hoặc tên nguời dùng " class="input-container">
+                    </div>
+                    <div class="content-container password">
+                        <label for="content-password" class="text-header">Mật khẩu</label><br>
+                        <input type="password" id="content-password" placeholder=" mật khẩu" class="input-container">
+                    </div>
+
+                    <div class="switch-container">
+                        <div class="switch">
+                            <!-- Rounded switch -->
+                            <label class="switch">
+                                <input type="checkbox" id="remember">
+                                <span class="slider round"></span>
+                            </label>
+
+                        </div>
+                        <span class="remember">Hãy nhớ tôi</span>
+                    </div>
+
+                    <div class="signin-btn">
+                        <div class="button">
+                            <button class="sign-up" id="button">Đăng nhập</button >
+                        </div>
+                        <div class="forgot">
+                            <a href="" class="forgot-container">Quên mật khẩu của bạn?</a>
+                        </div>
+                    </div>
+
+
+                    <div class="signup-container">
+                        <p id="none-acc">Bạn chưa có tài khoản? <a class="signup" href="./signIn.html">Đăng kí Spotify</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+<script src="./js/signIn.js"></script>
+</body>
+
+</html>

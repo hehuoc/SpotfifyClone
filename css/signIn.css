@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 24px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+body {
+    background-color: rgb(21, 20, 20);
+}
+.header{
+    margin-top: 50px;
+    border-bottom:0.1px solid rgb(90, 90, 90) ;
+    width: 100%;
+}
+
+.container {
+  
+    width: 55%;
+    margin: auto;
+    background-color: black;
+}
+.background-color{
+    width: 45%;
+    background-color: black;
+    margin-top: 32px;
+    /* margin: auto; */
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+#content-email {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+#content-password {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.header-container {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.text-header {
+    color: white;
+}
+
+.content-container {
+    margin-top: 40px;
+
+
+
+}
+
+#content-email {
+    border: 2px solid white;
+    background-color: rgb(21, 20, 20);
+}
+
+#content-password {
+    border: 2px solid white;
+    background-color: rgb(21, 20, 20);
+}
+.forgot{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.signin-btn{
+    border-bottom:0.1px solid grey;
+}
+.forgot-container{
+    color: aliceblue;
+}
+.input-container {
+    border-radius: 5px;
+}
+#none-acc{
+    color: rgb(152, 152, 152);
+}
+.signup{
+    color: aliceblue;
+}
+.signup-container{
+    margin-top: 50px ;
+    margin-bottom: 60px;
+}
+
+.sign-up {
+    background-color: rgb(7, 206, 7);
+    border-radius: 25px;
+    padding: 18px 50px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(0, 0, 0);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #0cf55a;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #0cf55a;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.remember{
+    color: white;
+}
+.switch-container{
+    margin-top: 30px;
+}
+
+a {
+    color: aliceblue;
+    /* text-decoration: none; */
+}
+
+a:hover {
+    color: rgb(130, 175, 130);
+    /* text-decoration: none; */
+    cursor: pointer;
+}
+.signup-container{
+    display: flex;
+    justify-content: center  ;
+}
+.input-container{
+    border: 2px solid white;
+    background-color: rgb(21, 20, 20);
+    color: white;
+}
