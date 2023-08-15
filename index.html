@@ -158,32 +158,28 @@
 
                 </div>
                 <div class="account">
-                    <button id="premium">Khám phá Premium</button>
-                    <button id="download">
-                        <div class="download-container">
-                            <div class="download-icon"><i class="fa-solid fa-arrow-down"></i></div>
-                            <div class="">Cài đặt ứng dụng</div>
+                    <div id="sign-in" style="display: none;">
+                        <div class="btn-group">
+                            <button id="avartar" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                <li><button class="dropdown-item" type="button">Tài khoản <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></button></li>
+                                <li><button class="dropdown-item" type="button">Hồ sơ</button></li>
+                                <li><button class="dropdown-item" type="button">Hỗ trợ <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></button></li>
+                                <li><button class="dropdown-item" type="button">Cài đặt</button></li>
+                                <li><button class="dropdown-item dis-account" type="button" id="log-out-btn">Đăng
+                                        xuất</button></li>
+                            </ul>
                         </div>
-                    </button>
-                    <div class="btn-group">
-                        <button id="avartar" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-user"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-                            <li><button class="dropdown-item" type="button">Tài khoản <i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i></button></li>
-                            <li><button class="dropdown-item" type="button">Hồ sơ</button></li>
-                            <li><button class="dropdown-item" type="button">Nâng cấp lên Premium <i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i></button></li>
-                            <li><button class="dropdown-item" type="button">Hỗ trợ <i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i></button></li>
-                            <li><button class="dropdown-item" type="button">Tải xuống <i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i></button></li>
-                            <li><button class="dropdown-item" type="button">Cài đặt</button></li>
-                            <li><button class="dropdown-item dis-account" type="button">Đăng xuất</button></li>
-                        </ul>
                     </div>
+                    <div id="not-sign-in">
+                        <button id="sign-up-btn" class="sign-up">Đăng ký</button>
+                        <button id="sign-in-btn" class="sign-in">Đăng nhập</button>
 
+                    </div>
                 </div>
             </div>
 
@@ -203,7 +199,67 @@
 
                 </div>
             </div>
+            <h3 class="name-album">Tập dành cho bạn</h3>
+            <div class="for-you">
 
+                <button class="btn-card">
+                    <div class="image-card-artist"> <img src="./img/monsieur tuna.jpeg" alt="" class="image-card"></div>
+                    <div class="info-card">
+                       
+                        <p class="name-artist-card"> monsieur tuna</p>
+                        <p class="time-artist-card">
+                        
+                        <div class="icon-for-card">
+                            19 thg 5 <div class="circle-icon"><i class="fa-solid fa-circle icon-circle"></i></div>
+                            7 phút
+                        </div>
+                        </p>
+                    </div>
+                </button>
+
+                <button class="btn-card">
+                    <div class="image-card-artist"> <img src="./img/saigonthaycung.jpeg" alt="" class="image-card">
+                    </div>
+                    <div class="info-card">
+                        <p class="name-artist-card"> Sài Gòn thấy cưng</p>
+                        <p class="time-artist-card">
+                        <div class="icon-for-card">
+                            <!-- 19  thg  5 <div class="circle-icon"><i class="fa-solid fa-circle icon-circle"></i></div>
+                        7  phút -->
+                            saigonthaycung
+                        </div>
+                        </p>
+                    </div>
+                </button>
+
+                <button class="btn-card">
+                    <div class="image-card-artist"> <img src="./img/genz.jpeg" alt="" class="image-card"></div>
+                    <div class="info-card">
+                        <p class="name-artist-card"> Gen Z tập lớn</p>
+                        <p class="time-artist-card">
+                        <div class="icon-for-card">
+                            <!-- 19  thg  5 <div class="circle-icon"><i class="fa-solid fa-circle icon-circle"></i></div>
+                        7  phút -->
+                            genztaplon
+                        </div>
+                        </p>
+                    </div>
+                </button>
+
+                <button class="btn-card">
+                    <div class="image-card-artist"> <img src="./img/mixigaming.jpeg" alt="" class="image-card"></div>
+                    <div class="info-card">
+                        <p class="name-artist-card">MixiGaming</p>
+                        <p class="time-artist-card">
+                        <div class="icon-for-card">
+                            <!-- 19  thg  5 <div class="circle-icon"><i class="fa-solid fa-circle icon-circle"></i></div>
+                        7  phút -->
+                            mixigaming
+                        </div>
+                        </p>
+                    </div>
+                </button>
+            </div>
         </div>
 
 
@@ -212,23 +268,51 @@
 
 
     <footer>
-        <div class="play-music" hidden>
-            <div id="music-img">
-                <img src="./img/db6d5190969e51ac60c728a540361e33.1000x1000x1.png" alt="" class="music-img">
+        <div class="play-music">
+            <div class="play-music-img">
+                <img src="./img/ab67616d0000b273fec60dc00d6f833379047450.jpeg" alt="" class="play-music-img" id="play-music-img">
             </div>
             <div class="music-infor">
+                <div class="name-music" id="name-music">Một bước yêu vạn dặm đau</div>
+                <div class="artist-name" id="artist-name">Mr.Siro</div>
 
-                <div class="music-name">Build a Bitch</div>
-                <div class="music-artist">Bella Poarch</div>
-               
             </div>
-            <div class="liked-music"><i class="fa-regular fa-heart"></i></div>
-
+            <div class="liked-music">
+                <button class="liked-music-container"> <i class="fa-regular fa-heart liked-music"></i></button>
+                <button class="liked-music-container"><i class="fa-solid fa-heart liked-music" hidden></i></button>
+            </div>
 
 
         </div>
-        <div class="listener-bar"></div>
-        <div class="option"></div>
+        <div class="listener-bar">
+
+            <div class="icon-bar">
+                <button class="bar-icon"><i class="fa-solid fa-shuffle "></i></button>
+                <button class="bar-icon"> <i class="fa-solid fa-backward-step "></i></button>
+                <button class="bar-icon btn-play">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause" hidden></i>
+                </button>
+                <button class="bar-icon"> <i class="fa-solid fa-forward-step "></i></button>
+                <button class="bar-icon"> <i class="fa-solid fa-repeat "></i></button>
+            </div>
+            <div class="bar">
+                <input type="range" id="bar">
+            </div>
+
+
+        </div>
+        <div class="option">
+            <div class="opption-on">
+                <button class="volume-icon"> <i class="fa-solid fa-volume-high "></i></button>
+                <button class="volume-icon"> <i class="fa-solid fa-volume-xmark " hidden></i></button>
+                <input type="range" id="volume-bar">
+            </div>
+            <div class="option-off" style="display: none;">
+                <button class="volume-icon"> <i class="fa-solid fa-volume-high "></i></button>
+                <button class="volume-icon"> <i class="fa-solid fa-volume-xmark "></i></button>
+                <input type="range" id="volume-bar">
+            </div>
 
     </footer>
 

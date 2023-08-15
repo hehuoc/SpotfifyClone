@@ -4,14 +4,34 @@ let img = document.getElementById('img-artist')
 let nameArtist = document.getElementById('name-artist')
 let nameSong = document.getElementById('name-song')
 let listSong = document.getElementById('list-song')
+let signIn =document.getElementById('sign-in')
+let notSignIn = document.getElementById('not-sign-in')
+let signUpBtn = document.getElementById('sign-up-btn')
+let signInBtn = document.getElementById('sign-in-btn')
+let logOut = document.getElementById("log-out-btn")
 
+if(localStorage.getItem('logged')){
+    signIn.style.display = 'block'
+    notSignIn.style.display = 'none'
+}else{
+    signIn.style.display = 'none'
+    notSignIn.style.display = 'block'
+}
 
-searchBtn.addEventListener('click', async function () {
-    if (searchMusic.value == '') {
-        alert("")
-        return
-    }
+signInBtn.addEventListener('click',function(){
+    window.location.href = "signIn.html"
+})
 
+signUpBtn.addEventListener('click', function(){
+    window.location.href = "signUp.html"
+})
+
+logOut.addEventListener('click',function () {
+    localStorage.removeItem('logged')
+    window.location.reload()
+})
+
+async function callAPI(){
     const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=' + searchMusic.value;
     const options = {
         method: 'GET',
@@ -39,7 +59,7 @@ searchBtn.addEventListener('click', async function () {
                 break
             }
             string +=`
-                <div class="result">
+                <div class="result" id_song="${item.id}">
                     <div class="result-container">
                         <div class="flex">
                             <img src="${item.artist.picture}" alt=""
@@ -67,8 +87,31 @@ searchBtn.addEventListener('click', async function () {
         }
         console.log(string)
         listSong.innerHTML = string
+        document.querySelectorAll(".result").forEach((item) => {
+            item.addEventListener('click' , function(){
+                localStorage.setItem('chosen-song' , item.getAttribute("id_song"))
+                window.location.href = "index-music.html"
+            })
+        })
 
     } catch (error) {
         console.error(error);
     }
+}
+
+searchBtn.addEventListener('click', async function () {
+    if (searchMusic.value == '') {
+        alert("")
+        return
+    }
+
+    await callAPI()
 })
+
+searchMusic.addEventListener('keypress', async function(e){
+    if(e.key === "Enter" ){
+        await callAPI()
+    }
+})
+
+
