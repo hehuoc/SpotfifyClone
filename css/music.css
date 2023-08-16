@@ -20,6 +20,8 @@ body {
 
 .flex{
     display: flex;
+    align-items: center;
+  
 }
 
 #main-content {
@@ -50,7 +52,6 @@ body {
 
 .content-container {
     width: 24%;
-    position: fixed;
     top: 0;
     bottom: 0;
 }
@@ -58,12 +59,9 @@ body {
 
 
 .main-container {
-    width: 79%;
-
+    width: 76%;
     margin-top: 10px;
     border-radius: 5px;
-    margin-right: 10px;
-    margin-left: 25%;
 
 }
 
@@ -100,7 +98,6 @@ body {
 
 .search-icon {
     margin-right: 16px;
-
 }
 
 .list {
@@ -291,7 +288,9 @@ body {
 
 .account {
     margin-right: 30px;
-
+    display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .fa-arrow-down {
@@ -410,8 +409,6 @@ footer {
 }
 
 .head {
-    position: fixed;
-    background-color: rgb(25, 24, 24);
     top: 0;
     left: 24%;
     right: 0;
@@ -421,22 +418,21 @@ footer {
     border-radius: 5px;
     margin-top: 10px;
     margin-right: 12px;
-    height: 100%;
 
 }
 
 .header-container {
     display: flex;
-    position: fixed;
-    margin-top: 170px;
+  
     justify-content: space-between;
     margin-bottom: 50px;
+    margin-top: 10px;
+    margin-right: 12px;
 
 }
 
 .header {
     display: flex;
-    position: fixed;
     justify-content: space-between;
 
 
@@ -509,8 +505,8 @@ footer {
 
 .search-icon {
     position: absolute;
-    left: 200px;
-    top: 29px;
+    left: 565px;
+    top: 49px;
     font-size: 20px;
     background: none
 }
@@ -531,30 +527,9 @@ footer {
 
 }
 
-.result-img {
-    /* position: fixed; */
-    /* left: 55%; */
-    width: 45px;
-    border-radius: 5px;
-    /* top: 28%; */
-    margin-left: 12px;
-    margin-top: 10px;
-    margin-right: 16px;
 
 
-}
-.result-info {
-    color: white;
-    margin-top: 8px;
-    /* display: flex; */
 
-
-}
-
-.result-container {
-    display: flex;
-    justify-content: space-between;
-}
 
 .more-info {
     display: flex;
@@ -715,4 +690,41 @@ font-size: 20px;
     width: 50%;
     align-items: center;
     margin-top: 10px;
+}
+
+.img-container{
+    /* width: 45px; */
+}
+.list-song{
+    margin-top: 20px;
+}
+.result-img {
+    /* position: fixed; */
+    /* left: 55%; */
+    width: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* top: 28%; */
+}
+.result-info {
+    color: white;
+    /* display: flex; */
+
+
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.result{
+    padding: 4px 4px;
+    width: 100%;
+}
+.result:hover{
+    background-color: rgb(41, 40, 40);
+}
+p {
+    margin: 0;
 }

@@ -24,8 +24,8 @@
 
             <div class="home">
                 <div class="icon-home">
-                    <div class="home-icon">
-                        <p> <i class="fa-solid fa-house"></i> Trang chủ</p>
+                    <div class="home-icon-house">
+                        <a href="./index.html"> <i class="fa-solid fa-house"></i> Trang chủ</a>
                     </div>
                     <div class="home-icon">
                         <a href="./music.html"><i class="fa-solid fa-magnifying-glass"> </i> Tìm kiếm</a>
@@ -186,8 +186,6 @@
                 <div class="detail-music">
                     <div class="music-image"><img src="./img/1 buoc yeu van dam dau.jpeg" alt=""
                             class="img-music-detail" id="image-music"></div>
-
-
                 </div>
                 <div class="info-detail-music">
 
@@ -267,7 +265,8 @@
     <footer>
         <div class="play-music">
             <div class="play-music-img">
-                <img src="./img/ab67616d0000b273fec60dc00d6f833379047450.jpeg" alt="" class="play-music-img" id="play-music-img">
+                <img src="./img/ab67616d0000b273fec60dc00d6f833379047450.jpeg" alt="" class="play-music-img"
+                    id="play-music-img">
             </div>
             <div class="music-infor">
                 <div class="name-music" id="name-music">Một bước yêu vạn dặm đau
@@ -276,8 +275,9 @@
 
             </div>
             <div class="liked-music">
-                <button class="liked-music-container"> <i class="fa-regular fa-heart liked-music"></i></button>
-                <button class="liked-music-container"><i class="fa-solid fa-heart liked-music" hidden></i></button>
+                <button class="liked-music-container" id="liked-music-btn"> 
+                    <i class="fa-regular fa-heart liked-music" id="not-liked"></i>
+                    <i class="fa-solid fa-heart liked-music" hidden id="liked"></i></button>
             </div>
 
 
@@ -306,6 +306,7 @@
                 <button class="volume-icon"> <i class="fa-solid fa-volume-xmark " hidden></i></button>
                 <input type="range" id="volume-bar">
             </div>
+        </div>
 
     </footer>
 
@@ -314,7 +315,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="./js/index-music.js"></script>
+    <script src="./js/index-music.js" type="module"></script>
 </body>
 
 </html>

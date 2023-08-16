@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -101,7 +101,7 @@ body {
 
 .list {
     display: flex;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 .list-container {
@@ -503,7 +503,7 @@ footer {
 
 .play-music {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     /* padding-right: 80px;
    padding-top: 18px; */
@@ -773,6 +773,9 @@ border: none;
    flex-direction: column;
   
 }
+.home-icon{
+    margin-top: 24px;
 
+}
 
 

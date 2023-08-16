@@ -1,6 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+import { getFirestore, collection, addDoc, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -18,8 +20,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebase = initializeApp(firebaseConfig);
-
-
+const database = getFirestore(firebase);
 
 let submitButton = document.getElementById('button')
 let email = document.getElementById('content-email')
@@ -66,11 +67,34 @@ submitButton.addEventListener('click', function submitForm(event) {
 
     let auth = getAuth(firebase)
     signInWithEmailAndPassword(auth, email.value, password.value)
-        .then((userCredential) => {
+        .then(async (userCredential) => {
             // sendEmailVerification(auth.currentUser)
             const user = userCredential.user
-            localStorage.setItem('user',JSON.stringify(user))
-            localStorage.setItem('logged','true')
+            localStorage.setItem('user', JSON.stringify(user))
+            localStorage.setItem('logged', 'true')
+            const userDocRef = doc(database, "songs", user.uid)
+
+            // getDoc(userDocRef)
+            // .then((response)=>{
+            //   if(response.data().exists()){
+            //     console.log("abc")
+            //     localStorage.setItem("favSongsList",response.data())
+            //   }else{
+            //     console.log("xyz")
+            //     localStorage.setItem("favSongsList",[])
+            //   }
+            // })
+            // .catch((error)=>{
+            //     console.log(error)
+            // })
+
+            const songs = await getDoc(userDocRef)
+            if (songs.exists()) {
+                localStorage.setItem("favSongsList",JSON.stringify(songs.data().songList))
+            }else{
+                localStorage.setItem("favSongsList", [])
+            }
+
             alert('sign in successfully')
             window.location.href = 'index.html'
         })

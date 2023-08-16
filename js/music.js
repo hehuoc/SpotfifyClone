@@ -58,31 +58,36 @@ async function callAPI(){
             if(count == 4){
                 break
             }
-            string +=`
-                <div class="result" id_song="${item.id}">
-                    <div class="result-container">
-                        <div class="flex">
-                            <img src="${item.artist.picture}" alt=""
-                                class="result-img">
-                            <div class="result-info">
-                                <div>${item.title}</div>
-                                <div>${item.artist.name}</div>
-                            </div>
+
+            string += `
+            <div class="result"  id_song="${item.id}">
+                <div class="result-container">
+                    <div class="flex">
+                        <div class="img-container">
+                            <img src="${item.artist.picture}"
+                                alt="" class="result-img">
                         </div>
-                        <div class="more-info">
-                            <div class="more-container">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-                            <div class="more-container time">
-                                <p id="time"> 4:58</p>
-                            </div>
-                            <div class="more-container">
-                                <p class="other-options"><i class="fa-solid fa-ellipsis"></i></p>
-                            </div>
+                        <div class="result-info">
+                            <div>${item.title}</div>
+                            <div>${item.artist.name}</div>
                         </div>
                     </div>
-                </div>            
+                    <div class="more-info">
+                        <div class="more-container">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="more-container time">
+                            <p id="time"> 4:58</p>
+                        </div>
+                        <div class="more-container">
+                            <p class="other-options"><i class="fa-solid fa-ellipsis"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             `
+
+
             count++    
         }
         console.log(string)
